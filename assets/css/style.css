@@ -1,0 +1,133 @@
+ul, li, a {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+* {
+  font-family: mitra;
+}
+
+@font-face {
+  font-family: motiva;
+  src: url(), local(motiva sans);
+}
+.header-section .up-header {
+  width: 100vw;
+  height: 3.5rem;
+}
+.header-section .up-header img {
+  width: 5rem;
+}
+.header-section .up-header span {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.header-section .up-header .verticalLine {
+  border-left: 0.2rem solid #000000;
+  width: 0.5rem;
+  height: 3rem;
+}
+.header-section .middle-header {
+  width: 100vw;
+  height: 3.5rem;
+}
+.header-section .middle-header img {
+  width: 8rem;
+}
+.header-section .middle-header .input-header input {
+  width: 388px;
+  border-radius: 5px;
+  direction: rtl;
+  outline: none;
+}
+.header-section .middle-header .input-header i {
+  left: 5px;
+  cursor: pointer;
+}
+.header-section .middle-header .dropdown-toggle {
+  font-size: 1.5rem;
+}
+.header-section .middle-header .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+.header-section .middle-header .buy-header {
+  border: 0.15rem solid red;
+  border-radius: 0.5rem;
+  color: red;
+  font-size: 1.2rem;
+}
+.header-section .middle-header .responsive-header {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.header-section .middle-header .responsive-search-header {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: -800px;
+  transition: all 0.6s;
+}
+.header-section .middle-header .responsive-search-header div {
+  height: 7vh;
+}
+.header-section .middle-header .responsive-search-header div span {
+  justify-self: center !important;
+  font-size: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header-section .middle-header .responsive-search-header .input-responsive-search-header {
+  height: 6vh;
+  background-color: rgb(173, 171, 171);
+}
+.header-section .middle-header .responsive-search-header .input-responsive-search-header div {
+  width: 200px;
+  height: 4vh;
+}
+.header-section .middle-header .responsive-search-header .input-responsive-search-header input {
+  border-radius: 5px;
+  direction: rtl;
+  outline: none;
+  height: 4vh;
+  width: 200px;
+}
+.header-section .middle-header .responsive-search-header .input-responsive-search-header i {
+  cursor: pointer;
+  left: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .header-section .up-header span {
+    font-size: 1rem;
+  }
+  .header-section .up-header img {
+    width: 4rem;
+  }
+  .header-section .middle-header {
+    justify-content: space-around !important;
+  }
+  .header-section .middle-header img {
+    width: 6rem;
+  }
+}
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+  .header-section .middle-header .input-header input {
+    width: 300px !important;
+  }
+}
+@keyframes zoomin {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

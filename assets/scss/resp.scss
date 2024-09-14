@@ -1,0 +1,34 @@
+
+    // -- header------------------------- 
+
+@media only screen and (max-width: 768px) {
+    .header-section{
+        .up-header{
+            span{
+                font-size: 1rem;
+            }
+            img{
+                width: 4rem;
+            }
+        }
+
+        .middle-header{
+            justify-content: space-around !important;
+            img{
+                width: 6rem;
+            }
+    }
+}
+}
+
+@media only screen and (max-width: 992px) and (min-width:769px) {   
+    .header-section{
+        .middle-header{
+            .input-header{
+            input{
+                width: 300px !important;
+            }
+        }
+    }
+}
+}

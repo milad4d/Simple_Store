@@ -1,0 +1,15 @@
+ul,li,a{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+*{
+    font-family: mitra;
+}
+@import "var.scss";
+@import "font.scss";
+@import "renew.scss";
+@import "resp.scss";
+@import "animation.scss";
