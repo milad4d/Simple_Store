@@ -1,95 +1,61 @@
-// -- header------------------------- 
-
-.header-section {
-  .up-header {
-    width: 100vw;
-    height: 3.5rem;
-    img {
-      width: 5rem;
-    }
-    span {
-      font-weight: bold;
-      font-size: 1.3rem;
-    }
-    .verticalLine {
-      border-left: 0.2rem solid #000000;
-      width: 0.5rem;
-      height: 3rem;
-    }
-  }
-
-  .middle-header {
-    width: 100vw;
-    height: 3.5rem;
-    img {
-      width: 8rem;
-    }
-    .input-header {
-      input {
-        width: 388px;
-        border-radius: 5px;
-        direction: rtl;
-        outline: none;
-      }
-      i {
-        left: 5px;
-        cursor: pointer;
-      }
-    }
-    .dropdown-toggle{
-      font-size: 1.5rem;
-    }
-    .dropdown:hover .dropdown-menu {
-      display: block;
-      margin-top: 0; 
-      
-    }
-    .buy-header{
-      border: 0.15rem solid red;
-      border-radius: 0.5rem;
-      color: red;
-      font-size: 1.2rem;
-    }
-    .responsive-header{
-      font-size: 1.5rem;
-      font-weight: bolder;
-      cursor: pointer;     
-    }
-    .responsive-search-header{
-      width: 100vw;
-      height: 100vh;
-      top: 0;
-      left: -800px;
-      transition: all 0.6s;
-      div{
-        height: 7vh;
-        span{
-          justify-self: center !important;
-          font-size: 2rem;
-          margin-left: auto;
-          margin-right: auto;
+// header----------------------
+.beside {
+    width: 20vw;
+    flex-shrink: 2;
+}
+.header {
+    .up-header {
+        height: 3.5rem;
+        width: 100vw;
+        span {
+            font-size: 1.5rem;
+            font-weight: bold;
         }
-      }
-        .input-responsive-search-header{
-          height: 6vh;
-          background-color: rgb(173, 171, 171);
-          div{
-            width: 200px;
-            height: 4vh;
-          }
-          input {
-            border-radius: 5px;
-            direction: rtl;
+        .divider {
+            width: 0.2rem;
+            height: 3rem;
+            background-color: black;
+        }
+        img {
+            max-width: 6rem;
+        }
+    }
+    .mid-header {
+        height: 3.5rem;
+        width: 100vw;
+        img{
+            width: 20rem;
+            height: 3rem;
+        }
+        .container {
+            height: 3.5rem;
+        }
+        .search-header {
+            input {
+                border-radius: 5pt;
+                border: 0;
+                direction: rtl;
+                width: 15rem;
+                outline: none;
+            }
+            i{
+                position: absolute;
+                left: 4px;
+                top: 2px;
+            }
+        }
+        a{
+            font-size: 1.3rem;
             outline: none;
-            height: 4vh;
-            width: 200px;
-          }
-          i {
-            cursor: pointer;
-            left: 4px;
-          }
+            border: none;
         }
-      }
+        .header-button{
+            background-color: transparent;
+            border-radius: 0.4rem;
+            border: 0.15rem solid red;
+            height: 2rem;
+            color: red;
+            width: 8rem;
+        }
     }
-  }
-
+}
