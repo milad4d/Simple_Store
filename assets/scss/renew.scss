@@ -23,6 +23,9 @@
     .mid-header {
         height: 3.5rem;
         width: 100vw;
+        i{
+            cursor: pointer;
+        }
         img{
             width: 20rem;
             height: 3rem;
@@ -57,5 +60,43 @@
             color: red;
             width: 8rem;
         }
+    }
+    .search-mobile{
+        width: 100vw;
+        height: 100vw;
+        top: 0px;
+        left: -550px;
+        transition: all 0.5s;
+        >div{
+            height: 8vh;
+            background-color: antiquewhite;
+            >span{
+                font-size: 2rem;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            >i{
+                font-size: 2rem;
+            }
+        }
+        .search-header {
+            input {
+                border-radius: 5pt;
+                border: 1;
+                direction: rtl;
+                width: 100vw;
+                outline: none;
+                height: 4vh;
+            }
+            i{
+                position: absolute;
+                left: 4px;
+                top: 2px;
+            }
+        }
+    }
+    .dropdown-header{
+        width: 100vw;
+        height: 2rem;
     }
 }

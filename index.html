@@ -12,6 +12,7 @@
 
 <body>
 
+
     <!-- Header----------------------- -->
     <section class="header d-flex flex-column">
 
@@ -27,9 +28,10 @@
 
         <!-- mid-header-------- -->
         <div class="mid-header bg-warning">
-            <div class=" container d-flex flex-row-reverse align-items-center">
+            <div class=" container-md d-flex flex-row-reverse align-items-center">
+                <i class="bi bi-border-width d-md-none mt-3 mx-3"></i>
                 <img src="assets/images/logo.svg" alt=" ">
-                <div class="col-lg-4 col-md-1 col-1 col-xxl-6 col-xl-5"></div>
+                <div class="col-lg-4 col-md-1 col-6 col-xxl-6 col-xl-5"></div>
                 <div class="search-header position-relative d-none d-md-block">
                     <input type="text" placeholder="بنویسید">
                     <i class="bi bi-search"></i>
@@ -48,9 +50,40 @@
                     <span class="mx-1">سبد خرید</span>
                     <i class="bi bi-cart3 ms-1"></i>
                   </div>
+                  <i class="bi bi-person-fill-check d-md-none mx-1"></i>
+                  <i class="bi bi-search d-md-none mx-1" id="searchMobileButton"></i>
+                  <i class="bi bi-cart3 mx-1 d-md-none"></i>
             </div>
         </div>
 
+         <!-- search-mobile-header-------- -->
+        <div class="search-mobile position-absolute bg-white d-sm-flex flex-column d-md-none">
+            <div class="d-flex flex-row-reverse">
+                <span>جستجو کنید</span>
+                <i class="bi bi-x-lg" id="searchCloseMobileButton"></i>
+            </div>
+            <nav class="search-header position-relative ">
+                <input type="text" placeholder="بنویسید">
+                <i class="bi bi-search" ></i>
+            </nav>
+
+        </div>
+
+        <!-- dropdown-Header -------- -->
+        <div class="dropdown-header bg-danger">
+            <div class="container-md d-flex flex-row-reverse align-items-center">
+                <div class="dropdown">
+                    <a class="btn  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
 
     </section>
 

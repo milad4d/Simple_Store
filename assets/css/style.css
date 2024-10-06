@@ -1,14 +1,18 @@
 ul, li, a {
-  list-style: none;
+  list-style: none !important;
 }
 
 a {
-  text-decoration: none;
-  color: white;
+  text-decoration: none !important;
 }
 
 * {
   font-family: mitra;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* remove the gap so it doesn't close */
 }
 
 @font-face {
@@ -39,6 +43,9 @@ a {
 .header .mid-header {
   height: 3.5rem;
   width: 100vw;
+}
+.header .mid-header i {
+  cursor: pointer;
 }
 .header .mid-header img {
   width: 20rem;
@@ -72,6 +79,42 @@ a {
   color: red;
   width: 8rem;
 }
+.header .search-mobile {
+  width: 100vw;
+  height: 100vw;
+  top: 0px;
+  left: -550px;
+  transition: all 0.5s;
+}
+.header .search-mobile > div {
+  height: 8vh;
+  background-color: antiquewhite;
+}
+.header .search-mobile > div > span {
+  font-size: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header .search-mobile > div > i {
+  font-size: 2rem;
+}
+.header .search-mobile .search-header input {
+  border-radius: 5pt;
+  border: 1;
+  direction: rtl;
+  width: 100vw;
+  outline: none;
+  height: 4vh;
+}
+.header .search-mobile .search-header i {
+  position: absolute;
+  left: 4px;
+  top: 2px;
+}
+.header .dropdown-header {
+  width: 100vw;
+  height: 2rem;
+}
 
 @media only screen and (max-width: 992px) {
   .header .up-header span {
@@ -79,6 +122,19 @@ a {
   }
   .header .up-header img {
     max-width: 4.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header .mid-header img {
+    width: 8rem !important;
+  }
+  .header .mid-header i {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .header .mid-header img {
+    width: 5rem !important;
   }
 }
 @keyframes zoomin {
